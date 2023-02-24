@@ -1,5 +1,9 @@
 import requests
 
+headers = {
+    'User-Agent': 'Mobile'
+}
+
 url = 'http://www.wikipedia.org'
 webpage = requests.get(url)
 
@@ -21,5 +25,3 @@ headers = {'User-Agent': 'Iphone 14'}
 url2 = 'http://httpbin.org/headers'
 request_header = requests.get(url2, headers=headers)
 print(request_header.text)
-#testing github
-
