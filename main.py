@@ -3,7 +3,7 @@ import requests
 headers = {
     'User-Agent': 'Mobile'
 }
-url = 'http://www.wikipedia.org'
+url = 'http://172.18.58.80/nantes'
 
 webpage = requests.get(url)
 print(webpage.text)
