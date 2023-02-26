@@ -3,7 +3,6 @@ import requests
 
 url = "http://172.18.58.80/nantes"
 
-
 class TestMyProgram(unittest.TestCase):
     def test_TestUrl(self):
         try:
