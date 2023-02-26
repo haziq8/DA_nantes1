@@ -14,3 +14,4 @@ class NewSpider(scrapy.Spider):
         next_page = response.css(page_selector).extract_first()
         if next_page:
             yield scrapy.Request(response.urljoin(next_page), callback=self.parse)
+#testing
