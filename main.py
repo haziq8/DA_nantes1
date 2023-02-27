@@ -8,7 +8,7 @@ url = 'http://172.18.58.80/nantes'
 webpage = requests.get(url)
 print(webpage.text)
 
-print("Status code:")
+print("Status code: OK")
 print("\t *", webpage.status_code)
 
 h = requests.head(url)
