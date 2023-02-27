@@ -5,7 +5,7 @@ class NewSpider(scrapy.Spider):
     start_urls = ['http://172.18.58.80/nantes']
 
     def parse(self, response):
-        css_selector = '//img'
+        css_selector = 'img'
         for x in response.css(css_selector):
             newsel = '@src'
             yield {'Image Link': x.xpath(newsel).extract_first(), }
